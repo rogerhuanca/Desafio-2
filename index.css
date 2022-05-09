@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(231, 197, 186);
+   
+    color: rgb(5, 7, 131);
+
+}
+
+header{
+    text-align: center;
+    padding: 5px 15px;
+    margin: 10px;
+}
+.menu {
+    overflow: hidden;
+    background-color: rgb(9, 241, 9);
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .menu a {
+    float: right;
+    display: block;
+    color: #e49292;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:30px;
+  }
+  .menu a:hover {
+    background-color: rgb(8, 71, 3);
+    color: rgb(219, 219, 210);
+    border-radius: 10px;
+  }
+  
+  .menu a:link {
+    color: rgb(162, 161, 212);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(2, 10, 12);
+  }
+ a:active {
+    color: rgb(223, 163, 128);
+  }
+  img{
+    display:  block;
+    margin-left: auto;
+    margin-right:auto;
+    border: 10px solid rgb(230, 76, 4);
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+  }
+h1 {
+    color: rgb(233, 30, 30);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h2{
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 8px inset rgb(214, 75, 151);
+    padding: 8px 8px 8px 8px;
+    margin: 20px;
+    text-decoration-line: underline;
+    color: #080808;
+    text-shadow: 0 0 3px #c1eb06, 0 0 5px #f0ec0b;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(5, 4, 58);
+    font-size: 20px ;
+    text-align: justify;
+}
+  ol {
+    font-size: 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(5, 8, 24);
+    margin: 10px 40px;
+
+  }
+  .video{
+    margin: 10px 30px;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+  
+}
+h4 {
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(5, 5, 5);
+    text-shadow: 2px 2px 4px #dd4c08;
+    
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+  }
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(10px auto);
+    padding: 10px;
+   
+  }
+  .container div {
+    background: #e49696;
+    padding: 2em;
+    
+  }
+  .container div:hover {
+    border: 5px solid rgb(15, 12, 12);
+  }
+  @media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #9b2e2e;
+        padding: 1em;
+        border-radius: 10px;
+      }
+      .container div:hover {
+        border: 5px solid rgb(250, 6, 6);
+      }
+   
+  }
+  @media screen and (max-width: 700px) {
+    body {
+        margin: 4px;
+      background-image: url("fondo2.jpg");
+      background-color: #f1f5f5;
+    }
+    
+    img {
+      display: block;
+      border: 5px solid rgb(250, 5, 5);
+      border-radius: 12px;
+      padding: 10px;
+      width: 90%;
+      margin:10px;
+    }
+    h1 {
+        text-shadow: 2px 2px rgb(16, 59, 3);
+        color:rgb(15, 12, 12)
+        
+    }
+    p {
+        font-size: 24px;
+        color: #080808;
+      
+      }
+      h2 {
+        font-size: 25px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border: 10px inset rgb(34, 206, 11);
+        color: rgb(5, 5, 5);
+        text-shadow: 2px 2px 4px #f80404;
+        
+        padding: 10px 10px 10px 20px;
+        margin: 10px;
+      }
+      ol {
+        font-size: 18px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(5, 8, 24);
+        margin: 10px 30px;
+
+      }
+      .video{
+        margin: 10px 10px;
+      }
+      h4 {
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(5, 5, 5);
+        text-shadow: 2px 2px 4px #0cec1e;
+        
+        padding: 10px 10px 10px 20px;
+        margin: 10px;
+      }
+    
+      .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #c44c37;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 5px solid rgb(55, 6, 231);
+      }
+  
+      .menu a {
+        float: none;
+        width: 100%;
+        margin: 2px;
+        padding: 6px 16px;
+        font-size: 16px;
+      }
+
+  }
